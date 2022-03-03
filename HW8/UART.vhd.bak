@@ -1,0 +1,110 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+USE ieee.numeric_std.ALL;
+ENTITY UART IS
+	PORT(start:IN STD_LOGIC;
+		data_in:IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		rx:IN STD_LOGIC;
+		clk:IN STD_LOGIC;
+		nrst:IN STD_LOGIC;
+		baud:IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		data_out:OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		tx:OUT STD_LOGIC;
+		data_ready:OUT std_logic
+		);
+END UART;
+
+ARCHITECTURE CODE OF UART IS
+	BEGIN 
+		P2S:PROCESS(nrst,clk)
+		VARIABLE counter : INTEGER := 0;
+		VARIABLE passbaud:INTEGER:=0;
+		VARIABLE data : STD_LOGIC_VECTOR(7 DOWNTO 0);
+		VARIABLE tempTX:STD_LOGIC;
+		BEGIN
+		IF rising_edge(clk) THEN 
+			IF 	nrst='0' THEN 
+			tx <= '1';
+			data:="00000000";
+			tempTX:= '1';
+			counter:=0;
+			passbaud:=0;
+			ELSIF nrst='1' THEN
+			  IF (passbaud = 0 AND  counter = 0)THEN
+				IF( start = '1' ) THEN 
+					data := data_in; 
+					tempTX := '0';
+					tx <= '0';
+					counter := counter + 1;
+				ELSIF( start = '0') THEN 
+				tx <= '1';
+				tempTX := '1';
+				END IF;
+				ELSE
+				IF ( passbaud = 0 ) THEN 
+					IF ( counter = conv_integer(baud) ) THEN 
+						tx <= data(passbaud);
+						tempTX := data(passbaud);
+						counter := 0;
+						passbaud := passbaud + 1;
+					ELSE 
+						tx <= tempTX; 
+						counter := counter + 1; 
+					END IF;		
+				ELSIF(passbaud > 7 ) THEN
+					counter := 0;				
+					passbaud := 0;
+					tx <= '1'; 
+					tempTX := '1';
+				ELSIF(counter = conv_integer(baud)-1 ) THEN
+					counter := 0; 
+					tx <= data(passbaud); 
+					tempTX := data(passbaud); 
+					passbaud := passbaud + 1; 
+					
+				ELSE 
+					counter := counter + 1;
+					tx <= tempTX;
+				END IF;
+			END IF;
+		END IF;
+	END IF;
+		END PROCESS;
+S2P:PROCESS(nrst,clk)
+	VARIABLE counter : INTEGER := 0;
+	VARIABLE passbaud : INTEGER := 0;
+	BEGIN
+	IF rising_edge(clk) THEN
+		IF nrst='0' THEN
+			data_out <= (OTHERS => '0');
+			data_ready <= '0';
+			counter :=0;
+			passbaud:=0;
+		ELSIF nrst='1' THEN
+			IF(counter = conv_integer(baud)) THEN 
+				counter := 0;
+				passbaud := passbaud + 1;				
+			END IF;
+			IF(passbaud = 0) THEN 	
+				IF( rx = '1') THEN 
+					counter := 0; 
+				END IF; 
+				data_ready <= '0';
+			ELSIF(counter = conv_integer(baud)-1 ) THEN 
+					data_out(passbaud-1) <= rx; 
+					IF (passbaud = 8) THEN 
+						data_ready <= '1'; 
+						passbaud := 0; 
+					ELSE 	
+						data_ready <= '0'; 
+					END IF; 
+				ELSE 
+					data_ready <= '0'; 
+				END IF;
+			END IF;
+			counter := counter + 1;
+		END IF;
+	--END IF;
+END PROCESS S2P;
+END CODE;

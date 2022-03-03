@@ -1,0 +1,42 @@
+C:/Users/kosrd/Desktop/DataPath_DSD_7th/miniproc_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/kosrd/Desktop/DataPath_DSD_7th/miniproc_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package miniproc_pack
+-- Compiling entity miniproc_tb
+-- Compiling architecture behavioral of miniproc_tb
+
+} {} {}} C:/Users/kosrd/Desktop/DataPath_DSD_7th/miniproc_pack.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/kosrd/Desktop/DataPath_DSD_7th/miniproc_pack.vhd
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package miniproc_pack
+-- Compiling package body miniproc_pack
+-- Loading package miniproc_pack
+
+} {} {}} C:/Users/kosrd/Desktop/DataPath_DSD_7th/ram.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/kosrd/Desktop/DataPath_DSD_7th/ram.vhd
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ram
+-- Compiling architecture ram of ram
+
+} {} {}} C:/Users/kosrd/Desktop/DataPath_DSD_7th/miniproc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/kosrd/Desktop/DataPath_DSD_7th/miniproc.vhd
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity miniproc
+-- Compiling architecture behavioral of miniproc
+
+} {} {}}

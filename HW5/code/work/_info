@@ -1,0 +1,105 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/amirhossein/Desktop/hw4
+T_opt
+!s110 1637592816
+Vj080F5d9ZVJ5:>BK?_d9T1
+04 16 4 work tb_nbitfulladder arch 1
+=1-98fa9b0fdd37-619baef0-41-2454
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+Enbitfulladder
+Z0 w1637591977
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/amirhossein/Desktop/SBU (5)/dsd/HW4
+Z4 8C:/Users/amirhossein/Desktop/SBU (5)/dsd/HW4/nBitFullAdder.vhd
+Z5 FC:/Users/amirhossein/Desktop/SBU (5)/dsd/HW4/nBitFullAdder.vhd
+l0
+L4
+VJdgg2Z<@jfMQ2b5JY[;iU2
+!s100 aJf>QEBMf5THkcGHoB:O73
+Z6 OL;C;10.6d;65
+32
+Z7 !s110 1637592353
+!i10b 1
+Z8 !s108 1637592353.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/amirhossein/Desktop/SBU (5)/dsd/HW4/nBitFullAdder.vhd|
+Z10 !s107 C:/Users/amirhossein/Desktop/SBU (5)/dsd/HW4/nBitFullAdder.vhd|
+!i113 0
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aadder_process
+R1
+R2
+DEx4 work 13 nbitfulladder 0 22 Jdgg2Z<@jfMQ2b5JY[;iU2
+l14
+L11
+VLzl>6Vi:WYQIlHY`VQH6D1
+!s100 `Xz[R=S<P?j;15fz^n?8>1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Etb_nbitfulladder
+Z13 w1637592785
+Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z16 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z17 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+R1
+R2
+R3
+Z18 8C:\Users\amirhossein\Desktop\SBU (5)\dsd\HW4\TB_nBitFullAdder.vhd
+Z19 FC:\Users\amirhossein\Desktop\SBU (5)\dsd\HW4\TB_nBitFullAdder.vhd
+l0
+L8
+VWWkO7coZJ<G=8jPgdOHVX3
+!s100 =Oz<d[Jo8o<>kQbz2GRMJ1
+R6
+32
+Z20 !s110 1637592793
+!i10b 1
+Z21 !s108 1637592793.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\amirhossein\Desktop\SBU (5)\dsd\HW4\TB_nBitFullAdder.vhd|
+Z23 !s107 C:\Users\amirhossein\Desktop\SBU (5)\dsd\HW4\TB_nBitFullAdder.vhd|
+!i113 0
+R11
+R12
+Aarch
+R14
+R15
+R16
+R17
+R1
+R2
+DEx4 work 16 tb_nbitfulladder 0 22 WWkO7coZJ<G=8jPgdOHVX3
+l23
+L10
+VJ9B>2<CE:HNV`<W8mEzSe3
+!s100 >N`;Uf@62ClgYT]2=LS9m3
+R6
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R11
+R12

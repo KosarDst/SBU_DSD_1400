@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kosrd/Desktop/8thProject_DSD/simulation/modelsim
+T_opt
+!s110 1640806007
+VbFQ5WdcnhG?TXde3PZbT30
+Z1 04 7 4 work uart_tb test 1
+=1-04d4c4e54257-61ccb677-6a-1614
+Z2 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.6d;65
+R0
+T_opt1
+Z5 !s110 1641537297
+VGG5Ee>]G0THaT8@P>POQ^0
+R1
+=1-04d4c4e54257-61d7df11-287-107c
+R2
+R3
+n@_opt1
+R4
+Euart
+Z6 w1641495942
+Z7 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z8 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z9 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z12 8C:/Users/kosrd/Desktop/8thProject_DSD/UART.vhd
+Z13 FC:/Users/kosrd/Desktop/8thProject_DSD/UART.vhd
+l0
+L6
+VY0609d:Om9nk`8j3Q^oco3
+!s100 Pc:hgL2QezRPZTC;I<Jl43
+Z14 OL;C;10.6d;65
+31
+R5
+!i10b 1
+Z15 !s108 1641537297.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/kosrd/Desktop/8thProject_DSD/UART.vhd|
+Z17 !s107 C:/Users/kosrd/Desktop/8thProject_DSD/UART.vhd|
+!i113 0
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
+Abehavioral
+R7
+R8
+R9
+R10
+R11
+DEx4 work 4 uart 0 22 Y0609d:Om9nk`8j3Q^oco3
+l23
+L19
+VkSZ>i;Ld[4>n_;TRQlS322
+!s100 _fSa1^NQRo>9gOlS]VomS0
+R14
+31
+R5
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Euart_tb
+Z20 w1641534992
+R0
+Z21 8C:/Users/kosrd/Desktop/8thProject_DSD/UART_TB.vhd
+Z22 FC:/Users/kosrd/Desktop/8thProject_DSD/UART_TB.vhd
+l0
+L1
+V5^He=G79`KODI@Xj9UQ1M0
+!s100 4VkGR]]7`Q`QXEz69JQDd0
+R14
+31
+R5
+!i10b 1
+R15
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/kosrd/Desktop/8thProject_DSD/UART_TB.vhd|
+Z24 !s107 C:/Users/kosrd/Desktop/8thProject_DSD/UART_TB.vhd|
+!i113 0
+R18
+R19
+Atest
+DEx4 work 7 uart_tb 0 22 5^He=G79`KODI@Xj9UQ1M0
+R10
+R11
+l28
+L5
+Vd:oLoU@ZZ=dD<=T@X=A:a1
+!s100 lFcSLLJ3oLPkji]RJWWLh1
+R14
+31
+R5
+!i10b 1
+R15
+R23
+R24
+!i113 0
+R18
+R19

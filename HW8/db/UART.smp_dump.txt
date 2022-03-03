@@ -1,0 +1,32 @@
+
+State Machine - |uart|next_state
+Name next_state.send_res next_state.get_xor next_state.get_num next_state.idle 
+next_state.idle 0 0 0 0 
+next_state.get_num 0 0 1 1 
+next_state.get_xor 0 1 0 1 
+next_state.send_res 1 0 0 1 
+
+State Machine - |uart|state
+Name state.send_res state.get_xor state.get_num state.idle 
+state.idle 0 0 0 0 
+state.get_num 0 0 1 1 
+state.get_xor 0 1 0 1 
+state.send_res 1 0 0 1 
+
+State Machine - |uart|next_state_s
+Name next_state_s.get_res next_state_s.wait_state next_state_s.send_xor next_state_s.send_num next_state_s.send_Zero next_state_s.idle 
+next_state_s.idle 0 0 0 0 0 0 
+next_state_s.send_Zero 0 0 0 0 1 1 
+next_state_s.send_num 0 0 0 1 0 1 
+next_state_s.send_xor 0 0 1 0 0 1 
+next_state_s.wait_state 0 1 0 0 0 1 
+next_state_s.get_res 1 0 0 0 0 1 
+
+State Machine - |uart|state_s
+Name state_s.get_res state_s.wait_state state_s.send_xor state_s.send_num state_s.send_Zero state_s.idle 
+state_s.idle 0 0 0 0 0 0 
+state_s.send_Zero 0 0 0 0 1 1 
+state_s.send_num 0 0 0 1 0 1 
+state_s.send_xor 0 0 1 0 0 1 
+state_s.wait_state 0 1 0 0 0 1 
+state_s.get_res 1 0 0 0 0 1 

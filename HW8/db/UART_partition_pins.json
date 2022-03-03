@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "baud[1]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[0]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[3]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[2]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[4]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[5]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[6]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "rx",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

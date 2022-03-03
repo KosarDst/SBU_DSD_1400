@@ -1,0 +1,9 @@
+{C:/Users/amirhossein/Desktop/SBU (5)/dsd/HW4/nBitFullAdder.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/amirhossein/Desktop/SBU (5)/dsd/HW4/nBitFullAdder.vhd}
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nBitFullAdder
+-- Compiling architecture adder_process of nBitFullAdder
+
+} {} {}}
